@@ -51,17 +51,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'risk_analyzer.wsgi.application'
 
+import os
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQL_DATABASE', 'risk_analyzer_db'),
-        'USER': os.environ.get('MYSQL_USER', 'risk_user'),
-        'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'risk_password'),
-        'HOST': os.environ.get('MYSQL_HOST', 'localhost'),
-        'PORT': os.environ.get('MYSQL_PORT', '3306'),
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-        },
+        'NAME': os.environ.get('MYSQLDATABASE'),
+        'USER': os.environ.get('MYSQLUSER'),
+        'PASSWORD': os.environ.get('MYSQLPASSWORD'),
+        'HOST': os.environ.get('MYSQLHOST'),
+        'PORT': os.environ.get('MYSQLPORT'),
     }
 }
 
