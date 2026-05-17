@@ -31,6 +31,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'risk_analyzer.urls'
+ALLOWED_HOSTS = ["*"]
 
 TEMPLATES = [
     {
