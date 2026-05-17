@@ -32,6 +32,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'risk_analyzer.urls'
 ALLOWED_HOSTS = ["*"]
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 TEMPLATES = [
     {
