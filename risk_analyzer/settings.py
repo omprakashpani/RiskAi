@@ -9,7 +9,7 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 ALLOWED_HOSTS = [
     "riskai-2.onrender.com",
 ]
-
+ALLOWED_HOSTS = ["*"]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
