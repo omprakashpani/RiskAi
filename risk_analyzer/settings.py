@@ -67,7 +67,7 @@ DATABASES = {
         'OPTIONS': {
             'ssl': {},
             'connect_timeout': 10,
-        }
+        },
     }
 }
 
