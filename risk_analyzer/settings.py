@@ -66,7 +66,8 @@ DATABASES = {
         'PORT': os.environ.get('MYSQLPORT'),
         'OPTIONS': {
             'ssl': {},
-        },
+            'connect_timeout': 10,
+        }
     }
 }
 
