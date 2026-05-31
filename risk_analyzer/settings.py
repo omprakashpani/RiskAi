@@ -66,7 +66,7 @@ DATABASES = {
         'PORT': os.environ.get('MYSQLPORT'),
         'OPTIONS': {
             'ssl': {},
-        }
+        },
     }
 }
 
