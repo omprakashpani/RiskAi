@@ -4,7 +4,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-risk-analyzer-learning-project-key")
-DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
+DEBUG = True
+ALLOWED_HOSTS = ["*"]
 
 ALLOWED_HOSTS = [
     "localhost",
