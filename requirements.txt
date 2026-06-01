@@ -1,0 +1,9 @@
+Django==5.2.4
+djangorestframework
+gunicorn
+mysqlclient
+whitenoise
+Pillow
+PyPDF2
+scikit-learn
+numpy
