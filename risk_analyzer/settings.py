@@ -63,6 +63,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'risk_analyzer.wsgi.application'
 
+print("MYSQLHOST =", os.environ.get("MYSQLHOST"))
+print("MYSQLPORT =", os.environ.get("MYSQLPORT"))
+print("MYSQLDATABASE =", os.environ.get("MYSQLDATABASE"))
+print("MYSQLUSER =", os.environ.get("MYSQLUSER"))
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
