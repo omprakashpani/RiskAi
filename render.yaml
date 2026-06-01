@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: riskai
+    env: python
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: gunicorn risk_analyzer.wsgi:application --timeout 120 --log-level debug
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
