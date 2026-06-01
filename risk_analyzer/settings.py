@@ -71,7 +71,9 @@ DATABASES = {
         'HOST': os.environ.get('MYSQLHOST') or os.environ.get('MYSQL_HOST', 'localhost'),
         'PORT': os.environ.get('MYSQLPORT') or os.environ.get('MYSQL_PORT', '3306'),
         'OPTIONS': {
-            'charset': 'utf8mb4',
+        'charset': 'utf8mb4',
+        'ssl': {},
+        'connect_timeout': 10,
         },
     }
 }
